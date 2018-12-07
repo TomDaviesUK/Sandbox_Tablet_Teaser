@@ -1,0 +1,29 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 5px solid black;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: ghostwhite;
+}
+
+tr:nth-child(odd) {
+    background-color: gainsboro;
+}
+
+#jumbotron-main{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../img/background_2.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 70% 50%;
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "tablet_teaser",
+  "version": "1.0.0",
+  "description": "First version of the tablet teaser app for CiscoLive Events.",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "ejs-locals": "^1.0.2",
+    "express": "^4.16.4",
+    "googleapis": "^27.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomDaviesUK/tablet_teaser.git"
+  },
+  "author": "Tom Davies",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TomDaviesUK/tablet_teaser/issues"
+  },
+  "homepage": "https://github.com/TomDaviesUK/tablet_teaser#readme"
+}

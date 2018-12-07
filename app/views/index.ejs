@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include templates/head.ejs %>
+</head>
+
+<body>
+
+  <% include templates/includes.ejs %>
+
+  <% include templates/header.ejs %>
+
+<div class="jumbotron" id="jumbotron-main">
+    <div class="container-fluid text-center h-100">
+      <div class="row h-100">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+      <h1 style="border:5px; border-style:solid; background-color:gainsboro; border-color:#black; "><font face="avengeance mightiest avenger" color="black">Leaderboard</font></h1>
+      <p class="lead"></p>
+
+      <table>
+        <tr>
+          <th><font face="avengeance mightiest avenger">Position</font></th>
+          <th><font face="avengeance mightiest avenger">Name</font></th>
+          <th><font face="avengeance mightiest avenger">Time</font></th>
+        </tr>
+        <% contestant_data.forEach(function(contestant_data, i) { %>
+        <tr>
+          <td><%= i+1 %></td>
+          <td><%= contestant_data[1]%></td>
+          <td><%= contestant_data[3]%></td>
+        </tr>
+        <% }); %>
+      </table>
+    </div>
+    </div>
+</div>
+    </div>
+
+<!--</main> /.container -->
+
+<% include templates/footer.ejs %>
+
+</body>
+</html>
