@@ -2,7 +2,7 @@
 
 /**
  * Gets the list of contestants from the Google sheet and adds it to request data.
- * @see https://docs.google.com/spreadsheets/d/<MY SPREADSHEET ID>/edit
+ * @see https://docs.google.com/spreadsheets/d/1rTMy-nYOT-X_T6tQ-MZPoYj2Hr1wNvbt6If9RYwiKoo/edit
  * @param {google.auth.OAuth2} auth The authenticated Google OAuth client.
  */
 function getContestants (req, res, next) {
@@ -19,7 +19,7 @@ function getContestants (req, res, next) {
     authorize(JSON.parse(content), (auth) => {
     const sheets = google.sheets({version: 'v4', auth});
     sheets.spreadsheets.values.get({
-        spreadsheetId: '<MY SPREADSHEET ID>',
+        spreadsheetId: '1rTMy-nYOT-X_T6tQ-MZPoYj2Hr1wNvbt6If9RYwiKoo',
         range: 'Form Responses 1!G2:K',
         }, (err, res) => {
           if (err) return console.log('The API returned an error: ' + err);
