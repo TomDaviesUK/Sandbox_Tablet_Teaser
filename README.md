@@ -12,7 +12,8 @@ It only has a single route right now - to the leaderboard of data.
 
 If you wanted to use this, you would need to:
 
-1. Create your Google Sheet and obtain it's ID
+1. Have [node](https://nodejs.org) installed
+2. Create your Google Sheet and obtain it's ID
 2. Enable the Google Sheets API for your account (Do step 1 of this article: https://developers.google.com/sheets/api/quickstart/nodejs)
 3. Replace where I have `<MY SPREADSHEET ID>` with your sheet ID in the controller code.
 4. Make sure you were retrieving the right range of data from your spreadsheet in the code just below that phrase, again in the controller file.
